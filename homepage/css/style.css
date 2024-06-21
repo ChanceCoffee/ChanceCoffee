@@ -1,53 +1,54 @@
-/* 공통 스타일 */
+@charset "UTF-8";
 
-#container{margin: 0; padding: 0;}
-
-a {
-    text-decoration: none;
+#content{
+    width: 1440;
+    margin: 0 100px;
 }
-
-ul li {
+#content h2{
+    text-align: center;
+}
+#content .product_list{
     list-style-type: none;
+    /* 패딩 초기화: 한줄에 다 나오게 하려고 */
+    padding-left: 0;
 }
 
-/* 공통-header 스타일 */
-.header{
-    width: 100%;
+#content .product_list li{
+    float: left;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
 }
-
-.navBar{
-    width: 90%;
-    height: 100px;
-    border: 3px solid #ccc;
-    display: flex;
-    flex-direction: row;
-    
-}
-
-.menu{
-    display: flex;
-    flex-direction: row;
-}
-
-.menu li{
-    margin: 5px;
-    padding: 5px;
-}
-
-/* 공통-main 스타일 */
-main{
-    width: 90;
+#content .product_list li img{
+    float: left;
+    width: 400px;
     height: 500px;
-    border: 2px solid #ccc;
-    margin: 10px 0;
+}
+#content .product_list .detail{
+    width: 400px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 500px;
+    transition: all 0s ease-in-out;
+}
+#content .product_list li:hover .detail{
+    transform: translateY(-400px);
+}
+#content .product_list .detail h2, p{
+    color: #f2f2f2;
+    text-align: center;
+    line-height: 1.5;
 }
 
-/* 공통-footer 스타일 */
-footer{
-    width: 100%;
-}
-footer ul{
-    width: 90%;
-    border: 2px solid #ccc;
-}
+/* 
+    순서
+    li(부모) -> position:relative, overflow:hidden, float:left
+    li > .detail(자식) -> absolute
+    li:hover->transform: translateY(-200px)
+    
+    이미지 크기(300x200)에 맞추어 설명(detail)의 박스(300x200)생성
+ */
+
+ 
 
