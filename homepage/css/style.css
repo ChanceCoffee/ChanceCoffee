@@ -6,12 +6,14 @@
 }
 
 a {
+
     text-decoration: none;
     font-family: 'Noto Sans KR';
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
     color: aliceblue;
+
 
 }
 
@@ -25,6 +27,7 @@ ul li {
 
 }
 
+
 .navBar {
     width: 100%;
     height: 64px;
@@ -36,24 +39,49 @@ ul li {
 }
 
 .logo {
-    width: 100px;
-    height: 64px;
+    margin-left: 10px;
+
+}
+
+.logo img {
+    margin: 10px;
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50px;
+
 }
 
 .menu {
     display: flex;
     flex-direction: row;
     height: 100%;
-    margin: 0;
+    margin: 0 50px;
+    padding: 0;
 }
 
 .menu li {
-    margin: 0 5px;
-    padding: 0 5px;
+    width: 100px;
+    margin: 0 30px;
+    padding: 0 px;
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
 
+}
+
+.menu li:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.menu li:hover a {
+    color: #078FC3;
+}
+
+.userIcon svg,
+.hamberger svg {
+    display: none;
 }
 
 /* 공통-main 스타일 */
@@ -67,9 +95,19 @@ main {
 /* 공통-footer 스타일 */
 footer {
     width: 100%;
+    height: 90px;
+    background-color: #078FC3;
+    display: flex;
 }
 
-footer ul {
-    width: 90%;
-    border: 2px solid #ccc;
+footer .infoCompany {
+    align-items: center;
+    justify-self: center;
+    width: 100%;
+}
+
+.infoCompany li {
+    text-align: center;
+    color: aliceblue;
+    font-size: 10px;
 }
