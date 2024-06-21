@@ -1,9 +1,18 @@
 /* 공통 스타일 */
 
-#container{margin: 0; padding: 0;}
+#container {
+    margin: 0;
+    padding: 0;
+}
 
 a {
     text-decoration: none;
+    font-family: 'Noto Sans KR';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    color: aliceblue;
+
 }
 
 ul li {
@@ -11,31 +20,44 @@ ul li {
 }
 
 /* 공통-header 스타일 */
-.header{
+.header {
     width: 100%;
+
 }
 
-.navBar{
-    width: 90%;
-    height: 100px;
-    border: 3px solid #ccc;
+.navBar {
+    width: 100%;
+    height: 64px;
+    /* border: 3px solid #ccc; */
     display: flex;
     flex-direction: row;
-    
+    background: #078FC3;
+
 }
 
-.menu{
+.logo {
+    width: 100px;
+    height: 64px;
+}
+
+.menu {
     display: flex;
     flex-direction: row;
+    height: 100%;
+    margin: 0;
 }
 
-.menu li{
-    margin: 5px;
-    padding: 5px;
+.menu li {
+    margin: 0 5px;
+    padding: 0 5px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
 }
 
 /* 공통-main 스타일 */
-main{
+main {
     width: 90;
     height: 500px;
     border: 2px solid #ccc;
@@ -43,11 +65,11 @@ main{
 }
 
 /* 공통-footer 스타일 */
-footer{
+footer {
     width: 100%;
 }
-footer ul{
+
+footer ul {
     width: 90%;
     border: 2px solid #ccc;
 }
-
