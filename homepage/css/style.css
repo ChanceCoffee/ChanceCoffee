@@ -42,12 +42,15 @@ main{
     margin: 10px 0;
 }
 
-/* 공통-footer 스타일 */
-footer{
-    width: 100%;
-}
-footer ul{
-    width: 90%;
-    border: 2px solid #ccc;
+/* introduce 스타일 */
+
+
+main .intoPic{
+    width: 1009px;
+    height: 690px;
+    border: 1px solid #ccc;
 }
 
+footer{
+    margin-top: 1000px;
+}
