@@ -84,13 +84,7 @@ ul li {
     display: none;
 }
 
-/* 공통-main 스타일 */
-main {
-    width: 90;
-    height: 500px;
-    border: 2px solid #ccc;
-    margin: 10px 0;
-}
+
 
 /* 공통-footer 스타일 */
 footer {
@@ -109,5 +103,55 @@ footer .infoCompany {
 .infoCompany li {
     text-align: center;
     color: aliceblue;
+    font-size: 10px;
+}
+
+
+
+/* introduce 스타일 */
+#introduceMain {
+
+}
+
+#introduceMain .introPic{
+    margin-top: 66px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ccc;
+    width: 1009px;
+    height: 690px;
+}
+#introduceMain .coffeeName{
+    margin-left: 320px;
+}
+
+.mapContainer{
+    display: flex;
+    align-items: center; /* 세로로 가운데 정렬 */
+    justify-content: center; /* 가로로 가운데 정렬 */
+}
+.mapContainer .mapPic{
+    border: 1px solid #ccc;
+    width: 445px;
+    height: 302px;
+    margin-top: 38px;
+    margin-bottom: 147px;
+    /* 사진과 텍스트의 사이간격 */
+    margin-right: 65px; 
+}
+.mapContainer .mapTex{
+    font-size: 20px;
+}
+
+
+.mapContainer .lapPic{
+    border: 1px solid #ccc;
+    width: 450px;
+    height: 400px;
+    margin-left: 220px;
+}
+
+.mapContainer .lapTex p{
     font-size: 10px;
 }
