@@ -1,5 +1,6 @@
-/* 공통 스타일 */
+@charset "utf-8";
 
+/* 공통 스타일 */
 #container {
     margin: 0;
     padding: 0;
@@ -31,7 +32,7 @@ ul li {
 .navBar {
     width: 100%;
     height: 64px;
-    /* border: 3px solid #ccc; */
+
     display: flex;
     flex-direction: row;
     background: #078FC3;
@@ -55,7 +56,7 @@ ul li {
 .menu {
     display: flex;
     flex-direction: row;
-    height: 100%;
+    /* height: 100%; */
     margin: 0 50px;
     padding: 0;
 }
@@ -84,13 +85,6 @@ ul li {
     display: none;
 }
 
-/* 공통-main 스타일 */
-main {
-    width: 90;
-    height: 500px;
-    border: 2px solid #ccc;
-    margin: 10px 0;
-}
 
 /* 공통-footer 스타일 */
 footer {
@@ -110,4 +104,201 @@ footer .infoCompany {
     text-align: center;
     color: aliceblue;
     font-size: 10px;
+}
+
+
+/* home 스타일(경현) */
+.homeMain {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100%;
+    height: 1200px;
+    flex-direction: column;
+    /* 수평으로 배치 */
+}
+
+.homeMain .mainWrap {
+    position: relative;
+    width: 1200px;
+}
+
+.homeMain .homeCoffee1 {
+    width: 1200px;
+    height: 600px;
+    background-image: url('../books.jpg');
+
+    background-repeat: no-repeat;
+    margin: 20px 0 80px 0;
+    position: absolute;
+
+}
+
+.homeMain .homeCoffee2 {
+    width: 550px;
+    height: 450px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../books.jpg');
+    position: absolute;
+    top: 650px;
+}
+
+/* .homeMain .homeContent1 { */
+/* width: 550px; */
+/* height: 400px; */
+/* display: flex; */
+/* flex-direction: column; */
+/* justify-content: center; */
+/* box-sizing: border-box; */
+/* text-align: center; */
+/* 텍스트 중앙 정렬 */
+/* 예시로 배경색 추가 */
+/* position: absolute; */
+/* top: 650px; */
+/* left: 600px; */
+/* } */
+
+.homeMain .helloWrap {
+    position: absolute;
+    top: 650px;
+    left: 600px;
+}
+
+.homeMain .introWrap {
+    position: absolute;
+    top: 690px;
+    left: 600px;
+}
+
+.homeMain .homeContent1 p {
+    font-size: 18px;
+    margin: 10px;
+}
+
+
+@media (max-width: 768px) {
+
+    /* header 모바일 */
+    a {
+
+        text-decoration: none;
+        font-family: 'Noto Sans KR';
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        color: #078FC3;
+
+
+    }
+
+
+    .navBar {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .navBar .hamberger .toggleBtn {
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        color: #078FC3;
+        display: flex;
+    }
+
+    .navBar .hamberger .toggleBtn .active {
+        display: flex;
+
+    }
+
+    .menu {
+        /* width: 100%; */
+        display: none;
+        flex-direction: column;
+        /* height: 100%; */
+        margin: 0;
+        padding: 0;
+        background-color: #078FC3;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu li {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        /* height: 100%; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        border: 1px solid #1779a2
+
+
+
+    }
+.menu li a{
+    color: aliceblue;
+    width: 100px;
+    line-height: 50px;
+    text-align: center;
+}
+
+    /* home 모바일 */
+    .homeMain {
+        display: flex;
+        height: 900px;
+    
+    }
+
+    .homeMain .mainWrap {
+
+        position: relative;
+        width: 360px;
+    }
+
+    .homeMain .homeCoffee1 {
+        width: 360px;
+        height: 280px;
+        background-image: url('../books.jpg');
+
+        background-repeat: no-repeat;
+        margin: 20px 0 30px 0;
+        position: absolute;
+
+    }
+
+    .mainWrap .helloWrap {
+        width: 360px;
+        position: absolute;
+        top: 310px;
+        left: 0;
+        text-align: center;
+    }
+
+    .homeMain .homeCoffee2 {
+        width: 360px;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url('../books.jpg');
+        position: absolute;
+        top: 380px;
+    }
+
+    .mainWrap .introWrap {
+        position: absolute;
+        top: 690px;
+        left: 0;
+        width: 360px;
+        text-align: center;
+    }
+
 }
