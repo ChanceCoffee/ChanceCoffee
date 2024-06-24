@@ -1,10 +1,12 @@
-/* 공통 스타일 */
-@charset "UTF-8";
 
+@charset "utf-8";
+
+/* 공통 스타일 */
 #container {
     margin: 0;
     padding: 0;
 }
+
 a {
     text-decoration: none;
     font-family: 'Noto Sans KR';
@@ -13,34 +15,45 @@ a {
     font-weight: 500;
     color: aliceblue;
 }
+
+
 ul li {
     list-style-type: none;
 }
+
 /* 공통-header 스타일 */
 .header {
     width: 100%;
+
 }
+
+
 .navBar {
     width: 100%;
     height: 64px;
-    /* border: 3px solid #ccc; */
     display: flex;
     flex-direction: row;
     background: #078FC3;
+
 }
+
 .logo {
     margin-left: 10px;
+
 }
+
+
 .logo img {
     margin: 10px;
     width: 45px;
     height: 45px;
-    border-radius: 50px;
+   border-radius: 50px;
 }
+
 .menu {
     display: flex;
     flex-direction: row;
-    height: 100%;
+    /* height: 100%; */
     margin: 0 50px;
     padding: 0;
 }
@@ -52,17 +65,24 @@ ul li {
     display: flex;
     align-items: center;
     justify-content: center;
+  
+
+
 }
+
 .menu li:hover {
     background-color: rgb(255, 255, 255);
 }
+
 .menu li:hover a {
     color: #078FC3;
 }
+
 .userIcon svg,
 .hamberger svg {
     display: none;
 }
+
 /* 공통-footer 스타일 */
 footer {
     width: 100%;
@@ -70,17 +90,18 @@ footer {
     background-color: #078FC3;
     display: flex;
 }
+
 footer .infoCompany {
     align-items: center;
     justify-self: center;
     width: 100%;
 }
+
 .infoCompany li {
     text-align: center;
     color: aliceblue;
     font-size: 10px;
 }
-
 
 /* product 스타일 (지희님) */
 #product_main {
@@ -152,10 +173,389 @@ footer .infoCompany {
 }
 
 
-/* 모바일 버전 스타일 */
-/* product 스타일 mobile버전 (지희님) */
+
+
+/* home 스타일(경현) */
+.homeMain {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100%;
+    height: 1200px;
+    flex-direction: column;
+    /* 수평으로 배치 */
+}
+
+.homeMain .mainWrap {
+    position: relative;
+    width: 1200px;
+}
+
+.homeMain .homeCoffee1 {
+    width: 1200px;
+    height: 600px;
+    background-image: url('../images/home_top.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 20px 0 80px 0;
+    position: absolute;
+
+}
+
+.homeMain .homeCoffee2 {
+    width: 550px;
+    height: 450px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../images/home_middle.jpeg');
+    position: absolute;
+    top: 650px;
+}
+
+
+.homeMain .helloWrap {
+    position: absolute;
+    top: 650px;
+    left: 600px;
+}
+
+.homeMain .introWrap {
+    position: absolute;
+    top: 690px;
+    left: 600px;
+}
+
+.homeMain .homeContent1 p {
+    font-size: 18px;
+    margin: 10px;
+}
+
+
+/* introduce 스타일 */
+#introduceMain {
+    display: flex;
+    width: 100%;
+    height: 3000px;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 대표사진 부분 */
+#introduceMain .introPic {
+    width: 100%;
+    height: 856px;
+    display: flex;
+    justify-content: center;
+}
+
+#introduceMain .introPic img {
+    margin-top: 66px;
+    margin-bottom: 100px;
+    border: 1px solid #ccc;
+    width: 1009px !important;
+    height: 690px !important;
+    border-radius: 5px;
+}
+
+/* 찬스커피대흥점 */
+
+.container {
+    width: 1673px;
+    height: 100%;
+    position: relative;
+}
+
+.container .title {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+/* 오는 길 설명 부분 */
+.container .mapPic {
+    position: absolute;
+    width: 445px !important;
+    height: 302px !important;
+    top: 120px;
+    left: 332px;
+}
+
+.container .mapPic img {
+    border: 1px solid #ccc;
+    width: 500px !important;
+    height: 350px !important;
+    border-radius: 5px;
+}
+
+.container .tex1Wrap {
+    margin: 0;
+    position: absolute;
+    top: 115px;
+    left: 850px;
+    width: 400px;
+    margin-left: 100px;
+    font-size: 20px;
+}
+
+.container .tex2Wrap {
+    margin: 0;
+    position: absolute;
+    top: 260px;
+    left: 850px;
+    width: 400px;
+    margin-top: 100px;
+    margin-left: 100px;
+    font-size: 20px;
+}
+
+/* 강의실 설명부분 */
+.container .lapPic {
+    position: absolute;
+    width: 500px !important;
+    height: 302px !important;
+    top: 550px;
+    left: 332px;
+}
+
+.container .lapPic img {
+    border: 1px solid #ccc;
+    width: 500px !important;
+    height: 350px !important;
+    border-radius: 5px;
+}
+
+.container .lapTex {
+    position: absolute;
+    top: 550px;
+    left: 950px;
+    font-size: 20px;
+}
+
+.container ul {
+    padding: 0;
+}
+
+.container ul li {
+    list-style-type: none;
+}
+
+.container ul ol {
+    padding-left: 10px;
+}
+
+.container p {
+    margin: 0;
+}
+
+.text01 {
+    font-size: 10px;
+}
+
+/* 폰 스타일 */
 @media (max-width: 768px) {
-    #content .product_list {
+
+    /* header 모바일 */
+    a {
+
+        text-decoration: none;
+        font-family: 'Noto Sans KR';
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        color: #078FC3;
+
+
+    }
+
+
+    .navBar {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .navBar .hamberger .toggleBtn {
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        color: #078FC3;
+        display: flex;
+    }
+
+    .navBar .hamberger .toggleBtn .active {
+        display: flex;
+
+    }
+
+    .menu {
+        /* width: 100%; */
+        display: none;
+        flex-direction: column;
+        /* height: 100%; */
+        margin: 0;
+        padding: 0;
+        background-color: #078FC3;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu li {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        /* height: 100%; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        border: 1px solid #1779a2
+    }
+
+    .menu li a {
+        color: aliceblue;
+        width: 100px;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    /* footer 모바일 스타일 */
+    .infoCompany li p {
+        font-size: 9px;
+        margin-right: 30px;
+    }
+
+    #introduceMain {
+        height: 1750px;
+    }
+
+    #introduceMain .introPic img {
+        width: 360px !important;
+        height: 300px !important;
+    }
+
+    /* 오는길 소개 부분 */
+    .container .mapTex1 {
+        position: absolute;
+        bottom: 120px;
+        left: -260px;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .coffeeName {
+        position: relative;
+        top: 10px;
+        font-size: 20px;
+    }
+
+    .mapPic img {
+        position: relative;
+        bottom: 30px;
+        left: 325px;
+    }
+
+    .container .mapTex2 {
+        position: absolute;
+        top: 80px;
+        left: -250px;
+        font-size: 15px;
+    }
+
+    /* 강의실 소개 부분 */
+    /*  */
+    .lapPic img {
+        position: absolute;
+        top: 30px;
+        left: 325px;
+    }
+
+    .lapTex p,
+    .lapTex ul {
+        position: relative;
+        top: 380px;
+        left: -240px;
+        font-size: 15px;
+    }
+
+    .lapTex .text01 {
+        font-size: 8px;
+    }
+
+    .container .mapPic img {
+        width: 360px !important;
+        height: 300px !important;
+    }
+
+    .container .lapPic img {
+        width: 360px !important;
+        height: 300px !important;
+    }
+
+
+    
+
+
+
+    /* home 모바일 */
+    .homeMain {
+        display: flex;
+        height: 900px;
+
+    }
+
+    .homeMain .mainWrap {
+
+        position: relative;
+        width: 360px;
+    }
+
+    .homeMain .homeCoffee1 {
+        width: 360px;
+        height: 280px;
+
+        background-repeat: no-repeat;
+        margin: 20px 0 30px 0;
+        position: absolute;
+
+    }
+
+    .mainWrap .helloWrap {
+        width: 360px;
+        position: absolute;
+        top: 310px;
+        left: 0;
+        text-align: center;
+    }
+
+    .homeMain .homeCoffee2 {
+        width: 360px;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 380px;
+    }
+
+    .mainWrap .introWrap {
+        position: absolute;
+        top: 690px;
+        left: 0;
+        width: 360px;
+        text-align: center;
+    }
+  
+  
+  /* product 스타일 mobile버전 (지희님) */
+   #content .product_list {
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* 한 줄에 두 개의 열로 구성 */
         grid-gap: 10px; /* 모바일 버전에서 항목 간의 간격 */
@@ -198,4 +598,7 @@ footer .infoCompany {
         line-height: 1.2; /* 줄 간격 조정 */
         margin: 2px 0; /* 내용 간격 조절 */
     }
+
+
+
 }
