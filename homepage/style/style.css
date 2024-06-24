@@ -1,4 +1,3 @@
-
 @charset "utf-8";
 
 /* 공통 스타일 */
@@ -7,26 +6,19 @@
     padding: 0;
 }
 
-a {
-    text-decoration: none;
-    font-family: 'Noto Sans KR';
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 500;
-    color: aliceblue;
-}
-
-
 ul li {
     list-style-type: none;
 }
 
-/* 공통-header 스타일 */
+
+
+
+
+/* --------------pc---------------- */
+/* 공통(pc)-header 스타일 */
 .header {
     width: 100%;
-
 }
-
 
 .navBar {
     width: 100%;
@@ -34,20 +26,17 @@ ul li {
     display: flex;
     flex-direction: row;
     background: #078FC3;
-
 }
 
 .logo {
     margin-left: 10px;
-
 }
-
 
 .logo img {
     margin: 10px;
     width: 45px;
     height: 45px;
-   border-radius: 50px;
+    border-radius: 50px;
 }
 
 .menu {
@@ -57,6 +46,7 @@ ul li {
     margin: 0 50px;
     padding: 0;
 }
+
 .menu li {
     width: 100px;
     margin: 0 30px;
@@ -65,9 +55,15 @@ ul li {
     display: flex;
     align-items: center;
     justify-content: center;
-  
+}
 
-
+.menu li a {
+    text-decoration: none;
+    font-family: 'Noto Sans KR';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    color: aliceblue;
 }
 
 .menu li:hover {
@@ -83,7 +79,11 @@ ul li {
     display: none;
 }
 
-/* 공통-footer 스타일 */
+
+
+
+
+/* 공통(pc)-footer 스타일 */
 footer {
     width: 100%;
     height: 90px;
@@ -103,87 +103,17 @@ footer .infoCompany {
     font-size: 10px;
 }
 
-/* product 스타일 (지희님) */
-#product_main {
-    width: 100%;
-    height: auto;
-    margin: 0;
-}
-#content {
-    width: 100%;
-    margin: 80px auto; /* 가운데 정렬 */
-}
-#content h1 {
-    text-align: center;
-}
-#content hr {
-    border: none;
-    border-top: 3px solid #ccc; /* 분단 줄 스타일 */
-    margin: 20px 0; /* 적절한 위아래 마진 설정 */
-}
-#content .product_list {
-    list-style-type: none;
-    padding-left: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* 항목들을 가운데 정렬 */
-    gap: 40px; /* 항목 간의 간격 */
-    max-width: 1400px; /* 적절한 너비 설정 */
-    margin: 0 auto; /* 리스트를 가운데 정렬 */
-}
-#content .product_list li {
-    width: 400px; /* 각 항목의 너비를 400px로 고정 */
-    height: 500px; /* 각 항목의 높이를 500px로 고정 */
-    box-sizing: border-box; /* 박스 크기를 포함하는 레이아웃 */
-    margin: 10px; /* 항목 간의 간격 조정 */
-    position: relative;
-}
-#content .product_list li img {
-    width: 100%; /* 이미지 너비를 100%로 설정하여 부모 요소의 너비에 맞게 */
-    height: 100%; /* 이미지 높이를 100%로 설정하여 부모 요소의 높이에 맞게 */
-    object-fit: cover; /* 이미지 비율 유지하면서 부모 요소에 맞춤 */
-}
-#content .product_list .detail {
-    width: 100%; /* 디테일 영역 너비를 100%로 설정하여 부모 요소에 맞게 */
-    height: 100%; /* 디테일 영역 높이를 100%로 설정하여 부모 요소에 맞게 */
-    background-color: rgba(0, 0, 0, 0.6);
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* 수직 중앙 정렬 */
-    align-items: center; /* 수평 중앙 정렬 */
-    text-align: center; /* 텍스트 가운데 정렬 */
-    opacity: 0; /* 기본적으로 보이지 않도록 설정 */
-    transition: opacity 0.3s ease; /* 트랜지션 효과 추가 */
-}
-#content .product_list li:hover .detail {
-    opacity: 1; /* 호버 시 디테일 영역을 보이도록 설정 */
-}
-#content .product_list .detail h2 {
-    color: #f2f2f2;
-    text-align: center;
-    line-height: 1.5;
-}
-#content .product_list .detail p {
-    color: #f2f2f2;
-    text-align: center;
-    line-height: 0.3;
-}
 
 
 
 
-/* home 스타일(경현) */
+/* home(pc) 스타일(hyun) */
 .homeMain {
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     width: 100%;
     height: 1200px;
     flex-direction: column;
-    /* 수평으로 배치 */
 }
 
 .homeMain .mainWrap {
@@ -199,7 +129,6 @@ footer .infoCompany {
     background-repeat: no-repeat;
     margin: 20px 0 80px 0;
     position: absolute;
-
 }
 
 .homeMain .homeCoffee2 {
@@ -212,7 +141,6 @@ footer .infoCompany {
     position: absolute;
     top: 650px;
 }
-
 
 .homeMain .helloWrap {
     position: absolute;
@@ -232,7 +160,115 @@ footer .infoCompany {
 }
 
 
-/* introduce 스타일 */
+
+
+
+/* product(pc) 스타일 (hee) */
+#product_main {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+#content {
+    width: 100%;
+    margin: 80px auto;
+    /* 가운데 정렬 */
+}
+
+#content h1 {
+    text-align: center;
+}
+
+#content hr {
+    border: none;
+    border-top: 3px solid #ccc;
+    /* 분단 줄 스타일 */
+    margin: 20px 0;
+    /* 적절한 위아래 마진 설정 */
+}
+
+#content .product_list {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* 항목들을 가운데 정렬 */
+    gap: 40px;
+    /* 항목 간의 간격 */
+    max-width: 1400px;
+    /* 적절한 너비 설정 */
+    margin: 0 auto;
+    /* 리스트를 가운데 정렬 */
+}
+
+#content .product_list li {
+    width: 400px;
+    /* 각 항목의 너비를 400px로 고정 */
+    height: 500px;
+    /* 각 항목의 높이를 500px로 고정 */
+    box-sizing: border-box;
+    /* 박스 크기를 포함하는 레이아웃 */
+    margin: 10px;
+    /* 항목 간의 간격 조정 */
+    position: relative;
+}
+
+#content .product_list li img {
+    width: 100%;
+    /* 이미지 너비를 100%로 설정하여 부모 요소의 너비에 맞게 */
+    height: 100%;
+    /* 이미지 높이를 100%로 설정하여 부모 요소의 높이에 맞게 */
+    object-fit: cover;
+    /* 이미지 비율 유지하면서 부모 요소에 맞춤 */
+}
+
+#content .product_list .detail {
+    width: 100%;
+    /* 디테일 영역 너비를 100%로 설정하여 부모 요소에 맞게 */
+    height: 100%;
+    /* 디테일 영역 높이를 100%로 설정하여 부모 요소에 맞게 */
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* 수직 중앙 정렬 */
+    align-items: center;
+    /* 수평 중앙 정렬 */
+    text-align: center;
+    /* 텍스트 가운데 정렬 */
+    opacity: 0;
+    /* 기본적으로 보이지 않도록 설정 */
+    transition: opacity 0.3s ease;
+    /* 트랜지션 효과 추가 */
+}
+
+#content .product_list li:hover .detail {
+    opacity: 1;
+    /* 호버 시 디테일 영역을 보이도록 설정 */
+}
+
+#content .product_list .detail h2 {
+    color: #f2f2f2;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#content .product_list .detail p {
+    color: #f2f2f2;
+    text-align: center;
+    line-height: 0.3;
+}
+
+
+
+
+
+/* introduce(pc) 스타일(yoon) */
 #introduceMain {
     display: flex;
     width: 100%;
@@ -259,7 +295,6 @@ footer .infoCompany {
 }
 
 /* 찬스커피대흥점 */
-
 .container {
     width: 1673px;
     height: 100%;
@@ -354,22 +389,22 @@ footer .infoCompany {
     font-size: 10px;
 }
 
-/* 폰 스타일 */
+
+
+
+
+/* ----------------------mobile 스타일----------------- */
 @media (max-width: 768px) {
 
     /* header 모바일 */
     a {
-
         text-decoration: none;
         font-family: 'Noto Sans KR';
         font-size: 15px;
         font-style: normal;
         font-weight: 500;
         color: #078FC3;
-
-
     }
-
 
     .navBar {
         width: 100%;
@@ -391,14 +426,11 @@ footer .infoCompany {
 
     .navBar .hamberger .toggleBtn .active {
         display: flex;
-
     }
 
     .menu {
-        /* width: 100%; */
         display: none;
         flex-direction: column;
-        /* height: 100%; */
         margin: 0;
         padding: 0;
         background-color: #078FC3;
@@ -412,7 +444,6 @@ footer .infoCompany {
         width: 100%;
         margin: 0;
         padding: 0;
-        /* height: 100%; */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -426,6 +457,10 @@ footer .infoCompany {
         line-height: 50px;
         text-align: center;
     }
+
+
+
+
 
     /* footer 모바일 스타일 */
     .infoCompany li p {
@@ -442,6 +477,121 @@ footer .infoCompany {
         height: 300px !important;
     }
 
+
+
+
+
+    /* home 모바일(hyun) */
+    .homeMain {
+        display: flex;
+        height: 900px;
+    }
+
+    .homeMain .mainWrap {
+        position: relative;
+        width: 360px;
+    }
+
+    .homeMain .homeCoffee1 {
+        width: 360px;
+        height: 280px;
+        background-repeat: no-repeat;
+        margin: 20px 0 30px 0;
+        position: absolute;
+    }
+
+    .mainWrap .helloWrap {
+        width: 360px;
+        position: absolute;
+        top: 310px;
+        left: 0;
+        text-align: center;
+    }
+
+    .homeMain .homeCoffee2 {
+        width: 360px;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 380px;
+    }
+
+    .mainWrap .introWrap {
+        position: absolute;
+        top: 690px;
+        left: 0;
+        width: 360px;
+        text-align: center;
+    }
+
+
+
+
+
+    /* product 스타일 mobile버전 (지희님) */
+    #content .product_list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* 한 줄에 두 개의 열로 구성 */
+        grid-gap: 10px;
+        /* 모바일 버전에서 항목 간의 간격 */
+    }
+
+    #content .product_list li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 140px;
+        /* 모바일 버전의 이미지 너비 */
+        height: 190px;
+        /* 모바일 버전의 이미지 높이 */
+        margin: 0 auto;
+        /* 가운데 정렬 */
+    }
+
+    #content .product_list li img {
+        width: 140px;
+        height: 190px;
+    }
+
+    #content .product_list .detail {
+        width: 140px;
+        padding: 5px;
+        /* 내부 여백 추가 */
+        box-sizing: border-box;
+        /* 패딩 포함하여 크기 계산 */
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        /* 텍스트 중앙 정렬 */
+    }
+
+    #content .product_list .detail h2 {
+        font-size: 12px;
+        /* 모바일에 맞게 글씨 크기 조절 */
+        margin: 5px 0;
+        /* 제목과 내용 간격 조절 */
+    }
+
+    #content .product_list .detail p {
+        font-size: 10px;
+        /* 모바일에 맞게 글씨 크기 조절 */
+        line-height: 1.2;
+        /* 줄 간격 조정 */
+        margin: 2px 0;
+        /* 내용 간격 조절 */
+    }
+
+
+
+
+
+    /* introduce 모바일(yoon) */
     /* 오는길 소개 부분 */
     .container .mapTex1 {
         position: absolute;
@@ -471,7 +621,6 @@ footer .infoCompany {
     }
 
     /* 강의실 소개 부분 */
-    /*  */
     .lapPic img {
         position: absolute;
         top: 30px;
@@ -499,106 +648,5 @@ footer .infoCompany {
         width: 360px !important;
         height: 300px !important;
     }
-
-
-    
-
-
-
-    /* home 모바일 */
-    .homeMain {
-        display: flex;
-        height: 900px;
-
-    }
-
-    .homeMain .mainWrap {
-
-        position: relative;
-        width: 360px;
-    }
-
-    .homeMain .homeCoffee1 {
-        width: 360px;
-        height: 280px;
-
-        background-repeat: no-repeat;
-        margin: 20px 0 30px 0;
-        position: absolute;
-
-    }
-
-    .mainWrap .helloWrap {
-        width: 360px;
-        position: absolute;
-        top: 310px;
-        left: 0;
-        text-align: center;
-    }
-
-    .homeMain .homeCoffee2 {
-        width: 360px;
-        height: 300px;
-        background-position: center;
-        background-repeat: no-repeat;
-        position: absolute;
-        top: 380px;
-    }
-
-    .mainWrap .introWrap {
-        position: absolute;
-        top: 690px;
-        left: 0;
-        width: 360px;
-        text-align: center;
-    }
-  
-  
-  /* product 스타일 mobile버전 (지희님) */
-   #content .product_list {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 한 줄에 두 개의 열로 구성 */
-        grid-gap: 10px; /* 모바일 버전에서 항목 간의 간격 */
-    }
-
-    #content .product_list li {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 140px; /* 모바일 버전의 이미지 너비 */
-        height: 190px; /* 모바일 버전의 이미지 높이 */
-        margin: 0 auto; /* 가운데 정렬 */
-    }
-
-    #content .product_list li img {
-        width: 140px;
-        height: 190px;
-    }
-
-    #content .product_list .detail {
-        width: 140px;
-        padding: 5px; /* 내부 여백 추가 */
-        box-sizing: border-box; /* 패딩 포함하여 크기 계산 */
-        opacity: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center; /* 텍스트 중앙 정렬 */
-    }
-
-    #content .product_list .detail h2 {
-        font-size: 12px; /* 모바일에 맞게 글씨 크기 조절 */
-        margin: 5px 0; /* 제목과 내용 간격 조절 */
-    }
-
-    #content .product_list .detail p {
-        font-size: 10px; /* 모바일에 맞게 글씨 크기 조절 */
-        line-height: 1.2; /* 줄 간격 조정 */
-        margin: 2px 0; /* 내용 간격 조절 */
-    }
-
-
 
 }
