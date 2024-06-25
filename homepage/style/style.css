@@ -295,12 +295,11 @@ footer .infoCompany {
 }
 
 #introduceMain .introPic img {
-    margin-top: 66px;
+    margin-top: 0;
     margin-bottom: 100px;
     border: 1px solid #ccc;
-    width: 900px !important;
-    height: 600px !important;
-    border-radius: 5px;
+    width: 1405px !important;
+    height: 700px !important;
 }
 
 /* 찬스커피대흥점 */
@@ -636,6 +635,7 @@ footer .infoCompany {
         height: 300px !important;
         position: relative;
         top: 20px;
+        border-radius: 5px;
     }
 
     .container .mapTex1 {
