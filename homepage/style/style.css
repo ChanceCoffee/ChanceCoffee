@@ -290,6 +290,7 @@ footer .infoCompany {
 
 /* 대표사진 부분 */
 #introduceMain .introPic {
+    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -298,7 +299,7 @@ footer .infoCompany {
     margin-top: 0;
     margin-bottom: 100px;
     border: 1px solid #ccc;
-    width: 1405px !important;
+    width: 100% !important;
     height: 700px !important;
 }
 
