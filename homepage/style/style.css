@@ -521,9 +521,12 @@ footer .infoCompany {
 }
 
 /* 찬스커피 오는 길 / div */
-.chanceMap{
+.chanceMap div{
     text-align: center;
     border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 /* 찬스커피 오는 길 / 이미지 */
 .chanceMap img{
@@ -536,6 +539,7 @@ footer .infoCompany {
 .chanceMap p{
     margin: 50px;
     font-size: 1.5em;
+    text-align: center;
 }
 /* 찬스커피 오는길 / a태그 */
 .chanceMap a{
