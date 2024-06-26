@@ -947,6 +947,12 @@ footer .infoCompany {
         font-size: 1.4em;
     }
 
+    /* 대흥 본점 오는 길 / div */
+    #introduceMain .chanceMap div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     /* 대흥 본점 오는 길 / 이미지 */
     #introduceMain .chanceMap img{
         width: 280px;
