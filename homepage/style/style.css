@@ -490,6 +490,7 @@ footer .infoCompany {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    text-align: center;
 }
 /* 부제목: 본점 / 부제목 */
 #introduceMain .chanceMidle_h1 h1{
@@ -519,19 +520,25 @@ footer .infoCompany {
 }
 
 /* 찬스커피 오는 길 / div */
-.chanceMap{
+.chanceMap div{
     text-align: center;
     border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 /* 찬스커피 오는 길 / 이미지 */
 .chanceMap img{
-    width: 1000px;
+    width: 700px;
     height: 500px;
+    margin: 20px;
+    border-radius: 5px;
 }
 /* 찬스커피 오는 길 / 내용 */
 .chanceMap p{
     margin: 50px;
     font-size: 1.5em;
+    text-align: center;
 }
 /* 찬스커피 오는길 / a태그 */
 .chanceMap a{
@@ -582,10 +589,18 @@ footer .infoCompany {
     color: #ffffff;
 }
 
+/* 찬스커피 000 지점 */
+.storeName{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
 /* 매장 소개 / div */
 .chanceBottom2{
     display: flex;
     justify-content: center;
+    margin-bottom: 200px;
 }
 /* 매장 소개 / ul */
 .chanceBottom2 ul{
@@ -599,11 +614,7 @@ footer .infoCompany {
 .chanceBottom2 img{
     width: 450px;
     height: 300px;
-}
-.storeName{
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 200px;
+    border-radius: 5px;
 }
 
 
@@ -891,9 +902,100 @@ footer .infoCompany {
 
 
     /* introduce 모바일(yoon) */
+    /* 가로 스크롤바 지우기용 */
     #introduceMain{
         overflow: hidden;
     }
 
-    
+    /* 찬스커피만의 경쟁력 / 이미지*/
+    #introduceMain .chanceTop img{
+        height: 250px;
+    }
+    /* 찬스커피만의 경쟁력 / h1 */
+    #introduceMain .chanceTop_h1 h1{
+        font-size: 0.7em;
+        height: 250px;
+    }
+    /* 찬스커피만의 경쟁력 / 내용 */
+    #introduceMain .chanceTop_h h2{
+        margin-top: 40px;
+        font-size: 1em;
+    }
+    /* 찬스커피만의 경쟁력 / 내용 2 */
+    #introduceMain .chanceTop_h h3{
+        font-size: 0.8em;
+    }
+
+    /* 대흥 본점 */
+    #introduceMain .chanceMidle{
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    /* 대흥 본점 / 이미지 */
+    #introduceMain .chanceMidle img{
+        height: 250px;
+    }
+    /* 대흥 본점 / h1 */
+    #introduceMain .chanceMidle_h1 h1{
+        height: 250px;
+        font-size: 1.3em;
+    }
+
+    /* 대흥 본점 부제목 / h2 */
+    #introduceMain .chanceHq_h2{
+        font-size: 1.4em;
+    }
+
+    /* 대흥 본점 오는 길 / 이미지 */
+    #introduceMain .chanceMap img{
+        width: 280px;
+        height: 200px;
+    }
+    /* 대흥 본점 오는 길 / 내용 */
+    #introduceMain .chanceMap p{
+        font-size: 1.1em;
+    }
+    /* 대흥 본점 오는 길 / 내용 */
+    #introduceMain .chanceMap p a{
+        font-size: 0.7em;
+    }
+    /* 대흥 본점 오는길 / div*/
+    #introduceMain .chanceBottom{
+        margin-top: 100px;
+    }
+
+    /* 신규오픈매장 / div */
+    #introduceMain .chanceBottom{
+        margin-bottom: 60px;
+    }
+    /* 신규오픈매장 / 이미지 */
+    #introduceMain .chanceBottom img{
+        height: 250px;
+    }
+    /* 신규오픈매장 / h1 */
+    #introduceMain .chanceBottom_h1 h1{
+        height: 250px;
+        font-size: 1.2em;
+    }
+
+    /* 찬스커피 000 지점 이미지 / div */
+    #introduceMain .chanceBottom2{
+        margin-top: 10px;
+    }
+    /* 찬스커피 000 지점 이미지 / ul */
+    #introduceMain .chanceBottom2 ul{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    /* 찬스커피 000 지점 이미지 / img */
+    #introduceMain .chanceBottom2 img{
+        margin:30px;
+        width: 280px;
+        height: 200px;
+        text-align: center;
+        margin: 30px 0;
+    }
+
 }
