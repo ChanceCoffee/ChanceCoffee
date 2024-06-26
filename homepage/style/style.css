@@ -167,12 +167,17 @@ footer .infoCompany {
     background-position: 0px -50px;
 }
 
+.homeMain .homeCoffee1 .mobile {
+    display: none;
+}
+
 .homeMain .section1 {
     /* background-image: linear-gradient(to right, #d26d6d38 1.5px, transparent 1.5px),
         linear-gradient(to bottom, #d26d6d38 1.5px, transparent 1.5px);
     background-size: 50px 50px; */
     width: 100%;
     display: flex;
+    justify-content: center;
     flex-direction: row;
     background-color: #f7f7f7;
     height: 800px;
@@ -180,7 +185,6 @@ footer .infoCompany {
 }
 
 .homeMain .section1 .homeCoffee2 {
-    margin-left: 300px;
     width: 400px;
     height: 400px;
     background-position: center;
@@ -247,11 +251,7 @@ footer .infoCompany {
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* background-color: #ccc; */
-}
-
-.homeMain .section3 .contentWrap2 {
-    margin-left: 400px;
+    justify-content: center;
 }
 
 .homeMain .section3 .contentWrap2 p {
@@ -551,7 +551,6 @@ footer .infoCompany {
 
     .menu.active {
         display: flex;
-
     }
 
     .menu li {
@@ -573,26 +572,25 @@ footer .infoCompany {
 
 
     /* footer 모바일 스타일 */
+    footer {
+        height: 100px;
+    }
 
-    .infoCompany {
-        margin: 10px 0;
+    footer .infoCompany {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .infoCompany li p {
-        margin-top: 5px;
+        margin: 0;
         line-height: 15px;
         font-size: 11px;
-        margin-right: 20px;
+
     }
 
-    #introduceMain {
-        height: 1750px;
-    }
-
-    #introduceMain .introPic img {
-        width: 360px !important;
-        height: 300px !important;
-    }
 
 
 
@@ -600,24 +598,46 @@ footer .infoCompany {
 
     /* home 모바일(hyun) */
     .homeMain {
-        height: 3100px;
+        height: fit-content;
     }
 
     .homeMain .section0 {
         width: 100%;
-        height: 800px;
+        height: fit-content;
     }
 
     .homeMain .homeCoffee1 {
+        height: fit-content;
         width: 100%;
-        margin: 100px auto;
         margin-top: 65px;
         background-image:
-            linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 1) 100%),
-            url('../images/chance_logo_2.jpeg');
+            linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 1) 100%);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center -100px;
+    }
+
+    .homeMain .homeCoffee1 .mobile {
+        display: block;
+        text-align: center;
+        position: relative;
+    }
+
+    .homeMain .homeCoffee1 .mobile img {
+        max-width: 380px;
+        width: 100%;
+
+    }
+
+    .homeMain .homeCoffee1 .mobile .gradient {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        width: 100%;
+        z-index: 100;
+        background:
+            linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 1) 100%);
+        height: 400px;
     }
 
     .homeMain .section1 {
@@ -628,9 +648,9 @@ footer .infoCompany {
     }
 
     .homeMain .section1 .homeCoffee2 {
-        width: 300px;
-        height: 300px;
-        border-radius: 150px;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
         margin: 50px 0 0;
     }
 
@@ -643,6 +663,7 @@ footer .infoCompany {
     }
 
     .homeMain .section2 {
+        height: 600px;
         /* background-image: 
         linear-gradient(to bottom, rgba(255, 255, 255, 0) 90%, rgba(255, 255, 255, 1) 100%),
         linear-gradient(to top, rgba(255, 255, 255, 0) 90%, rgba(255, 255, 255, 1) 100%),
@@ -673,6 +694,8 @@ footer .infoCompany {
     }
 
     .homeMain .section3 {
+        height: fit-content;
+        margin-bottom: 100px;
         flex-direction: column;
     }
 

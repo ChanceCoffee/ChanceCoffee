@@ -4,8 +4,5 @@ $(function () {
         $('.menu').toggle('active');
 
     })
-
-
-
 })
 
