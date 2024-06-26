@@ -491,6 +491,7 @@ footer .infoCompany {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    text-align: center;
 }
 /* 부제목: 본점 / 부제목 */
 #introduceMain .chanceMidle_h1 h1{
@@ -526,8 +527,10 @@ footer .infoCompany {
 }
 /* 찬스커피 오는 길 / 이미지 */
 .chanceMap img{
-    width: 1000px;
-    height: 500px;
+    width: 600px;
+    height: 400px;
+    margin: 20px;
+    border-radius: 5px;
 }
 /* 찬스커피 오는 길 / 내용 */
 .chanceMap p{
@@ -608,6 +611,7 @@ footer .infoCompany {
 .chanceBottom2 img{
     width: 450px;
     height: 300px;
+    border-radius: 5px;
 }
 
 
@@ -941,8 +945,8 @@ footer .infoCompany {
 
     /* 대흥 본점 오는 길 / 이미지 */
     #introduceMain .chanceMap img{
-        width: 400px;
-        height: 250px;
+        width: 280px;
+        height: 200px;
     }
     /* 대흥 본점 오는 길 / 내용 */
     #introduceMain .chanceMap p{
@@ -980,10 +984,15 @@ footer .infoCompany {
         display: flex;
         flex-direction: column;
         margin: 0;
+        padding: 0;
     }
     /* 찬스커피 000 지점 이미지 / img */
     #introduceMain .chanceBottom2 img{
-        margin:30px
+        margin:30px;
+        width: 280px;
+        height: 200px;
+        text-align: center;
+        margin: 30px 0;
     }
 
 }
