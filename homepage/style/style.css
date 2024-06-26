@@ -408,151 +408,204 @@ footer .infoCompany {
 
 
 /* introduce(pc) 스타일(yoon) */
-#introduceMain {
-    display: flex;
+#introduceMain{
+    margin-top: 6.7%;
+    height: auto;
+}
+/* 찬스커피만의 경쟁력 / 이미지, 부제목 / div/ */
+.chanceTop{
+    padding: 0;
+    font-family: 'BookkMyungjo-Bd';
+    font-size: 2.5em;
+}
+/* 찬스커피만의 경쟁력 / 이미지, 부제목 / li */
+.chanceTop li{
     width: 100%;
-    height: 2000px;
-    flex-direction: column;
+    height: 300px;
+    box-sizing: border-box;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+/* 찬스커피만의 경쟁력 / 이미지 */
+#introduceMain .chanceTop img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* 찬스커피만의 경쟁력 / 부제목 */
+#introduceMain .chanceTop_h1 h1{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+    display: flex;
+    /* 수직 중앙 정렬 */
+    justify-content: center;
+    /* 수평 중앙 정렬 */
     align-items: center;
+    /* 텍스트 가운데 정렬 */
+    text-align: center;
+    background-color: rgba(204, 204, 204, 0.675);
+    font-size: 45px;
+    color: #ffffff;
+}
+/* 찬스커피만의 경쟁력 / 내용 */
+#introduceMain .chanceTop_h h2{
+    font-family: 'BookkMyungjo-Bd';
+    margin-top: 150px;
+    text-align: center;
+    font-size: 25px;
+}
+/* 찬스커피만의 경쟁력 / 내용2 */
+#introduceMain .chanceTop_h h3{
+    font-family: 'BookkMyungjo-Bd';
+    text-align: center;
+    font-size: 15px;
 }
 
-/* 대표사진 부분 */
-#introduceMain .introPic {
+/* 부제목: 본점 /  */
+.chanceMidle{
+    padding: 0;
+    font-family: 'BookkMyungjo-Bd';
+    font-size: 2.5em;
+    margin: 300px 0 150px 0;
+}
+/* 부제목: 본점 / 이미지, 부제목 / li */
+.chanceMidle li{
     width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+/* 부제목: 본점 / 이미지 */
+#introduceMain .chanceMidle img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* 부제목: 본점 / 부제목 */
+#introduceMain .chanceMidle_h1 h1{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+    display: flex;
+    /* 수직 중앙 정렬 */
+    justify-content: center;
+    /* 수평 중앙 정렬 */
+    align-items: center;
+    /* 텍스트 가운데 정렬 */
+    text-align: center;
+    background-color: rgba(204, 204, 204, 0.534);
+    color: #ffffff;
+}
+
+/* 찬스커피 대흥 본점 / h2 */
+.chanceHq_h2{
+    text-align: center;
+    font-family: 'BookkMyungjo-Bd';
+    margin: 0;
+    font-size: 2em;
+}
+
+/* 찬스커피 오는 길 / div */
+.chanceMap{
+    text-align: center;
+    border-radius: 5px;
+}
+/* 찬스커피 오는 길 / 이미지 */
+.chanceMap img{
+    width: 1000px;
+    height: 500px;
+}
+/* 찬스커피 오는 길 / 내용 */
+.chanceMap p{
+    margin: 50px;
+    font-size: 1.5em;
+}
+/* 찬스커피 오는길 / a태그 */
+.chanceMap a{
+    text-decoration: none;
+    color: #078FC3;
+}
+
+/* 부제목: 신규오픈매장 */
+.chanceBottom{
+    padding: 0;
+    font-family: 'BookkMyungjo-Bd';
+    font-size: 2.5em;
+    margin: 300px 0 150px 0;
+}
+/* 부제목: 신규오픈매장 / 이미지, 부제목 / li */
+.chanceBottom li{
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+/* 부제목: 신규오픈매장 / 이미지 */
+#introduceMain .chanceBottom img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* 부제목: 신규오픈매장 / 부제목 */
+#introduceMain .chanceBottom_h1 h1{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+    display: flex;
+    /* 수직 중앙 정렬 */
+    justify-content: center;
+    /* 수평 중앙 정렬 */
+    align-items: center;
+    /* 텍스트 가운데 정렬 */
+    text-align: center;
+    background-color: rgba(204, 204, 204, 0.534);
+    color: #ffffff;
+}
+
+/* 매장 소개 / div */
+.chanceBottom2{
     display: flex;
     justify-content: center;
 }
-
-#introduceMain .introPic img {
-    margin-top: 0;
-    margin-bottom: 100px;
-    border: 1px solid #ccc;
-    width: 100% !important;
-    height: 700px !important;
+/* 매장 소개 / ul */
+.chanceBottom2 ul{
+    display: flex;
 }
-
-/* 찬스커피대흥점 */
-
-.container {
-    width: 1673px;
-    /* height: 100%; */
-    position: relative;
+/* 매장 소개 / li */
+.chanceBottom2 li{
+    margin: 0 40px;
 }
-
-.container .title2 {
-    /* position: absolute;
-    bottom: 10px; */
-    left: 500px;
-    visibility: hidden;
+/* 매장 소개 / 이미지 */
+.chanceBottom2 img{
+    width: 450px;
+    height: 300px;
 }
-
-.container .title {
-    font-family: 'BookkMyungjo-Bd';
-    font-weight: lighter;
+.storeName{
     text-align: center;
-    position: relative;
-    bottom: 80px;
+    font-size: 30px;
+    margin-bottom: 200px;
 }
-
-
-/* 오는 길 설명 부분 */
-.container .mapPic {
-    position: absolute;
-    width: 445px !important;
-    height: 302px !important;
-    top: 130px;
-    left: 380px;
-}
-
-.container .mapPic img {
-    border: 1px solid #ccc;
-    width: 500px !important;
-    height: 350px !important;
-    border-radius: 5px;
-}
-
-.container .tex1Wrap {
-    font-family: 'SeoulHangangM';
-    margin: 0;
-    position: absolute;
-    top: 190px;
-    left: 850px;
-    width: 400px;
-    margin-left: 100px;
-    font-size: 20px;
-}
-
-.container .tex2Wrap {
-    font-family: 'SeoulHangangM';
-    /* text-align: center; */
-    margin: 0;
-    position: absolute;
-    top: 230px;
-    left: 850px;
-    width: 400px;
-    margin-top: 100px;
-    margin-left: 100px;
-    font-size: 20px;
-}
-
-.container .tex2Wrap a {
-    color: #078FC3;
-    text-decoration: none;
-    /* text-align: center; */
-}
-
-
-/* 강의실 설명부분 */
-.container .lapPic {
-    position: absolute;
-    width: 500px !important;
-    height: 302px !important;
-    top: 600px;
-    left: 380px;
-}
-
-.container .lapPic img {
-    border: 1px solid #ccc;
-    width: 500px !important;
-    height: 350px !important;
-    border-radius: 5px;
-}
-
-.container .lapTex {
-    font-family: 'SeoulHangangM';
-    position: absolute;
-    top: 640px;
-    left: 950px;
-    font-size: 20px;
-    text-align: center;
-}
-
-.container .lapTex ul ol {
-    text-align: left;
-}
-
-.container ul {
-    padding: 0;
-}
-
-.container ul li {
-    list-style-type: none;
-}
-
-.container ul ol {
-    padding-left: 10px;
-}
-
-.container p {
-    margin: 0;
-}
-
-.text01 {
-    font-size: 10px;
-}
-
-
-
 
 
 /* ----------------------mobile 스타일----------------- */
@@ -839,92 +892,9 @@ footer .infoCompany {
 
 
     /* introduce 모바일(yoon) */
-    /* 오는길 소개 부분 */
-    .container .title2 {
-        font-family: 'BookkMyungjo-Bd';
-        position: absolute;
-        bottom: 435px;
-        left: 770px;
-        visibility: visible;
+    #introduceMain{
+        overflow: hidden;
     }
 
-    #introduceMain {
-        overflow-x: hidden;
-        /* width: 500px; */
-        height: 1750px;
-    }
-
-    #introduceMain .introPic img {
-        width: 360px !important;
-        height: 300px !important;
-        position: relative;
-        top: 20px;
-        border-radius: 5px;
-    }
-
-    .container .mapTex1 {
-        position: absolute;
-        bottom: 120px;
-        left: -260px;
-        text-align: center;
-        font-size: 15px;
-    }
-
-    .container .title {
-        width: 100%;
-    }
-
-    .coffeeName {
-        position: relative;
-        top: 180px;
-        font-size: 20px;
-    }
-
-    .mapPic img {
-        position: relative;
-        top: 30px;
-        left: 275px;
-    }
-
-    .container .mapTex2 {
-        position: absolute;
-        top: 180px;
-        left: -250px;
-        font-size: 15px;
-        text-align: center;
-    }
-
-    .container .mapTex2 a {
-        font-family: 'SeoulHangangM';
-    }
-
-    /* 강의실 소개 부분 */
-    .lapPic img {
-        position: absolute;
-        top: 20px;
-        left: 275px;
-    }
-
-    .lapTex p,
-    .lapTex ul {
-        position: relative;
-        top: 330px;
-        left: -210px;
-        font-size: 15px;
-    }
-
-    .lapTex .text01 {
-        font-size: 8px;
-    }
-
-    .container .mapPic img {
-        width: 360px !important;
-        height: 300px !important;
-    }
-
-    .container .lapPic img {
-        width: 360px !important;
-        height: 300px !important;
-    }
-
+    
 }
