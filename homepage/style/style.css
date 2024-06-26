@@ -595,6 +595,7 @@ footer .infoCompany {
 /* 매장 소개 / li */
 .chanceBottom2 li{
     margin: 0 40px;
+    transition: transform 0.5s ease; /* 변환 효과 설정 */
 }
 /* 매장 소개 / 이미지 */
 .chanceBottom2 img{
