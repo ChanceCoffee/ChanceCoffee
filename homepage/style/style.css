@@ -292,7 +292,7 @@ footer .infoCompany {
 #product_main {
     width: 100%;
     height: auto;
-    margin: 0 auto 30px;
+    margin: 150px auto 30px;
     font-family: 'SeoulHangangM';
 }
 
@@ -327,7 +327,6 @@ footer .infoCompany {
     /* 적절한 너비 설정 */
     margin: 0 auto;
     /* 리스트를 가운데 정렬 */
-
 }
 
 #content .product_list li {
@@ -770,6 +769,9 @@ footer .infoCompany {
 
 
     /* product 스타일 mobile버전 (지희님) */
+    #product_main {
+        margin: 100px auto 30px;
+    }
     #content .product_list {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
