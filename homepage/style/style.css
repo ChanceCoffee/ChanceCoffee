@@ -449,20 +449,22 @@ footer .infoCompany {
     align-items: center;
     /* 텍스트 가운데 정렬 */
     text-align: center;
-    background-color: rgba(204, 204, 204, 0.534);
+    background-color: rgba(204, 204, 204, 0.675);
+    font-size: 45px;
+    color: #ffffff;
 }
 /* 찬스커피만의 경쟁력 / 내용 */
 #introduceMain .chanceTop_h h2{
     font-family: 'BookkMyungjo-Bd';
     margin-top: 150px;
     text-align: center;
-    font-size: 40px;
+    font-size: 25px;
 }
 /* 찬스커피만의 경쟁력 / 내용2 */
 #introduceMain .chanceTop_h h3{
     font-family: 'BookkMyungjo-Bd';
     text-align: center;
-    font-size: 30px;
+    font-size: 15px;
 }
 
 /* 부제목: 본점 /  */
@@ -505,6 +507,7 @@ footer .infoCompany {
     /* 텍스트 가운데 정렬 */
     text-align: center;
     background-color: rgba(204, 204, 204, 0.534);
+    color: #ffffff;
 }
 
 /* 찬스커피 대흥 본점 / h2 */
@@ -512,12 +515,13 @@ footer .infoCompany {
     text-align: center;
     font-family: 'BookkMyungjo-Bd';
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 /* 찬스커피 오는 길 / div */
 .chanceMap{
     text-align: center;
+    border-radius: 5px;
 }
 /* 찬스커피 오는 길 / 이미지 */
 .chanceMap img{
@@ -527,11 +531,12 @@ footer .infoCompany {
 /* 찬스커피 오는 길 / 내용 */
 .chanceMap p{
     margin: 50px;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 /* 찬스커피 오는길 / a태그 */
 .chanceMap a{
-
+    text-decoration: none;
+    color: #078FC3;
 }
 
 /* 부제목: 신규오픈매장 */
@@ -574,6 +579,7 @@ footer .infoCompany {
     /* 텍스트 가운데 정렬 */
     text-align: center;
     background-color: rgba(204, 204, 204, 0.534);
+    color: #ffffff;
 }
 
 /* 매장 소개 / div */
@@ -591,8 +597,8 @@ footer .infoCompany {
 }
 /* 매장 소개 / 이미지 */
 .chanceBottom2 img{
-    width: 300px;
-    height: 500px;
+    width: 450px;
+    height: 300px;
 }
 .storeName{
     text-align: center;
@@ -787,5 +793,9 @@ footer .infoCompany {
 
 
     /* introduce 모바일(yoon) */
+    #introduceMain{
+        overflow: hidden;
+    }
 
+    
 }
