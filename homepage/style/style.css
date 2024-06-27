@@ -295,11 +295,12 @@ footer .infoCompany {
     font-family: 'SeoulHangangM';
 }
 
-#content {
+/* #content {
     width: 100%;
     margin: auto;
     /* 가운데 정렬 */
-}
+/* }  */
+
 
 #content h1 {
     text-align: center;
@@ -314,7 +315,7 @@ footer .infoCompany {
 }
 
 #content .product_list {
-    list-style-type: none;
+    /* list-style-type: none; */
     padding-left: 0;
     display: flex;
     flex-wrap: wrap;
@@ -347,6 +348,7 @@ footer .infoCompany {
     /* 이미지 높이를 100%로 설정하여 부모 요소의 높이에 맞게 */
     object-fit: cover;
     /* 이미지 비율 유지하면서 부모 요소에 맞춤 */
+    /* position: absolute; */
 }
 
 #content .product_list .detail {
@@ -364,7 +366,7 @@ footer .infoCompany {
     /* 수직 중앙 정렬 */
     align-items: center;
     /* 수평 중앙 정렬 */
-    text-align: center;
+    /* text-align: center; */
     /* 텍스트 가운데 정렬 */
     opacity: 0;
     /* 기본적으로 보이지 않도록 설정 */
@@ -397,7 +399,7 @@ footer .infoCompany {
 
 #content .product_list .detail p {
     color: #ffffff;
-    text-align: center;
+    /* text-align: center; */
     line-height: 0.4;
     font-size: large;
 }
