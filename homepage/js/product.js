@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let isScrolling = false;
     let activeItem = null; // 현재 활성화된 항목
 
-    // function toggleDetail(item) {
+    function toggleDetail(item) {
         const detail = item.querySelector('.detail');
         if (activeItem !== item) {
             // 현재 활성화된 항목이 아닌 경우만 visible 클래스 추가
