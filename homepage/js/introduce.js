@@ -14,6 +14,11 @@ const storeName = [
     "찬스커피 연남 지점"
 ];
 
+const storeM = [
+    "#영등포역 #레트로감성 #데이트스팟 #커피한잔 #깔끔한디자인",
+    "#홍대역 #경의선숲길 #조용한카페 #데이트스팟 #따뜻한인테리어"
+];
+
 // 현재 표시되는 이미지의 인덱스
 let currentIndex = 0;
 
@@ -22,6 +27,7 @@ const imgElement1 = document.querySelector('.newStoreImg1 img');
 const imgElement2 = document.querySelector('.newStoreImg2 img');
 // 사진 밑 지점명 p태그 선택
 const storeNameElement = document.querySelector('.storeName p');
+const storeMElement = document.querySelector('.storeM p');
 
 // 이미지 교체 함수
 function changeImage() {
@@ -33,6 +39,7 @@ function changeImage() {
     imgElement2.src = images2[currentIndex];
     // 매장명 들어갈 p태그 내용 변경
     storeNameElement.textContent = storeName[currentIndex];
+    storeMElement.textContent = storeM[currentIndex];
 }
 
 // 2초 간격으로 이미지 교체

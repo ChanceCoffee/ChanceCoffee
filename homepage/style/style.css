@@ -468,6 +468,25 @@ footer .infoCompany {
     text-align: center;
     font-size: 15px;
 }
+#introduceMain .kakao{
+    text-align: center;
+}
+#introduceMain .kakao p{
+    margin: 0;
+    font-size: 1.5em;
+    text-align: center;
+}
+#introduceMain .kakao p a{
+    padding: 5px;
+    text-decoration: none;
+    color: #3C1E1E;
+    background-color: #FAE100;
+    border-radius: 3px;
+}
+#introduceMain .kakao img{
+    width: 40px;
+}
+
 
 /* 부제목: 본점 /  */
 .chanceMidle{
@@ -602,7 +621,6 @@ footer .infoCompany {
 .chanceBottom2{
     display: flex;
     justify-content: center;
-    margin-bottom: 200px;
 }
 /* 매장 소개 / ul */
 .chanceBottom2 ul{
@@ -618,6 +636,14 @@ footer .infoCompany {
     width: 450px;
     height: 300px;
     border-radius: 5px;
+}
+/* 0-------------------------------------------------------------------- */
+.storeM{
+    text-align: center;
+    margin-bottom: 200px;
+}
+.storeM p{
+    font-size: 1em;
 }
 
 
@@ -929,6 +955,17 @@ footer .infoCompany {
         font-size: 0.8em;
     }
 
+    #introduceMain .kakao p{
+        font-size: 0.8em;
+    }
+    #introduceMain .kakao p a{
+        padding: 5px;
+        border-radius: 3px;
+    }
+    #introduceMain .kakao img{
+        width: 30px;
+    }
+
     /* 대흥 본점 */
     #introduceMain .chanceMidle{
         margin-top: 100px;
@@ -949,6 +986,12 @@ footer .infoCompany {
         font-size: 1.4em;
     }
 
+    /* 대흥 본점 오는 길 / div */
+    #introduceMain .chanceMap div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     /* 대흥 본점 오는 길 / 이미지 */
     #introduceMain .chanceMap img{
         width: 280px;
